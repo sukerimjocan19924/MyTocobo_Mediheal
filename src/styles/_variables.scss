@@ -3,15 +3,19 @@
     --fg: #111;
     --muted: #666;
     --text: #fff;
+    --text2: #20308D;
     --primary: #151789;
-    --secondary: #009BDE;
-    --tertiary: #678c07;
-    --maxw: 128rem;
+    --secondary: #3587D0;
+    --tertiary: #181818;
+    --quaternary: #B84745;
+    --erratic: #1884B4;
+    --maxw: 73.2rem;
     --gutter: 2rem;
-    --p-gradient: linear-gradient(to bottom, #FF7E7E, #DC272D);
-    --s-gradient: linear-gradient(to bottom, #51CAFF, #009BDE)
-}
+    
+    --main-sliders-tit: #000;
+    --main-sliders-sub: #6F6F6F;
 
+}
 
 $bp-lg:1280px;
 $bp-md:992px;

@@ -22,8 +22,6 @@
   font-style: italic;
 }
 
-
-
 *,
 *::after,
 *::before {
@@ -67,11 +65,12 @@ button {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 100%;
     background-color: rgb(218, 227, 255);
     &:nth-child(even){
         background-color: rgb(255, 235, 218);
-    }}
+    }
+}
 
 ul,
 ol,
