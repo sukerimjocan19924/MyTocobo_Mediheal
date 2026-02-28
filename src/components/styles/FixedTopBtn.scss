@@ -1,0 +1,8 @@
+.FixedTopBtn{
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 5;
+    background-color: var(--primary);
+    color: var(--text);
+}

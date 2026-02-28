@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+/* RedHatDisplay 폰트 등록 */
 @font-face {
-    font-family: 'Circular Std';
-    src: url('/fonts/CircularStd-Book.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Circular Std';
-    src: url('/fonts/CircularStd-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'RedHatDisplay';
+  src: url('/fonts/RedHatDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('/fonts/CircularStd-BlackItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
+  font-family: 'RedHatDisplay';
+  src: url('/fonts/RedHatDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url('/fonts/RedHatDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
 
 
 *,
@@ -40,35 +41,48 @@ body {
     background-color: var(--bg);
     color: var(--fg)
 }
-*{
-    font-family: "Circular Std", "Noto Sans KR";
+
+* {
+    font-family: "RedHatDisplay", "Noto Sans KR";
     letter-spacing: -.05em;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Circular Std", "Noto Sans KR";
+    font-family: "RedHatDisplay", "Noto Sans KR";
     font-weight: 700;
 }
 
 
 button {
-  background: none;
-  border: 0;
-  cursor: pointer;
-  font: inherit;
-  color: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
 }
 
 section {
-  min-height: 100vh;
-}
+    min-height: 100vh;
+    background-color: rgb(218, 227, 255);
+    &:nth-child(even){
+        background-color: rgb(255, 235, 218);
+    }}
 
 ul,
 ol,
 dl {
-  list-style: none;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+img {
+    max-width: 100%;
 }

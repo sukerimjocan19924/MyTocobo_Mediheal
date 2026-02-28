@@ -14,3 +14,24 @@ footer {
         height: 100%;
     }
 }
+
+
+
+.app-container {
+    &.up {
+        .TopBanner {
+            top: -110%
+        }
+
+        header {
+            top: 0
+        }
+    }
+
+    &.scrolled {
+        header {
+            background: var(--bg);
+        }
+    }
+
+}
