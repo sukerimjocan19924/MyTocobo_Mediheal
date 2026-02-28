@@ -53,7 +53,8 @@
                 background: var(--tertiary);
 
                 &:hover {
-                    color: var(--tertiary)
+                    color: var(--tertiary);
+                    border: 1px solid var(--tertiary);
                 }
             }
         }
@@ -63,7 +64,8 @@
                 background: var(--quaternary);
 
                 &:hover {
-                    color: var(--quaternary)
+                    color: var(--quaternary);
+                    border: 1px solid var(--quaternary);
                 }
             }
         }
@@ -73,7 +75,8 @@
                 background: var(--erratic);
 
                 &:hover {
-                    color: var(--erratic)
+                    color: var(--erratic);
+                    border: 1px solid var(--erratic);
                 }
             }
         }

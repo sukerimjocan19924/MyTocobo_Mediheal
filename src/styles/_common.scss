@@ -28,6 +28,7 @@
         align-content: center;
         color: var(--bg);
         background-color: var(--primary);
+        border: none;
         position: relative;
         transition: all .8s;
         overflow: hidden;
@@ -49,6 +50,7 @@
 
         &:hover {
             color: var(--primary);
+            border: 1px solid var(--primary);
 
             &::after {
                 opacity: 1;
