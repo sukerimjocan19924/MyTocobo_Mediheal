@@ -1,0 +1,33 @@
+#showcase {
+    padding: 0;
+    margin: 0;
+    
+    .cta-inner{
+        max-width: 116rem;
+        padding: 15rem 0;
+        .cta-list{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+
+            .img-wrap {
+                width: 11.5rem;
+                height: 11.5rem;
+                // width: 13rem;
+                // height: 13rem;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                border-radius: 13rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+                margin-top: 1.6rem;
+            }
+        }
+    }
+}
+
