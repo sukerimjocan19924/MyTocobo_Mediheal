@@ -7,8 +7,11 @@ import 'swiper/css/pagination';
 import { Pagination, Navigation } from 'swiper/modules';
 
 const Best = () => {
-  const prevRef = useRef(null)
   const swiperRef = useRef(null)
+
+  const addCommas = (num) => {
+    return num.toLocaleString() + "원"
+  }
 
   useEffect(() => {
 
@@ -40,6 +43,7 @@ const Best = () => {
             <a href="#">
               <div className="img-wrap">
                 <img src={sl.image} alt={sl.name} />
+                <span className='img-tit'>best</span>
               </div>
 
               <div className="info-wrap">
@@ -52,10 +56,10 @@ const Best = () => {
                 <div className="price-discount-wrap">
                   <div className="price-wrap">
                     <div className="price">
-                      {sl.price}
+                      {addCommas(sl.price)}
                     </div>
                     <div className="original-price">
-                      {sl.originalPrice}
+                      {addCommas(sl.originalPrice)}
                     </div>
                   </div>
                   <div className="discountRate-wrap">
