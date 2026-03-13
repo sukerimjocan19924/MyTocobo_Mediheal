@@ -43,33 +43,33 @@ const productsData = [
     label: "탄력",
     mainProduct: {
       image: img("elastic_main.png"),
-      description: "콜라겐 탄력 마스크 <br/>",
-      alt: "콜라겐 탄력 마스크 대표 이미지",
+      description: "Elastic Glow <br/> 탱탱한 탄력 케어",
+      alt: "Elastic Glow 탱탱한 탄력 케어 대표 이미지",
       link: "/product/elastic_more"
     },
     subProducts: [
       {
         image: img("elastic1.png"),
-        description: "콜라겐 탄력 마스크",
-        alt: "콜라겐 탄력 마스크",
+        description: "콜라겐 탄력 더마 모델링팩",
+        alt: "콜라겐 탄력 더마 모델링팩",
         link: "/product/elastic1"
       },
       {
         image: img("elastic2.png"),
-        description: "펩타이드 앰플",
-        alt: "펩타이드 앰플",
+        description: "더마플러스 프로폴리스 <br/> 마스크 10매",
+        alt: "더마플러스 프로폴리스 마스크 10매",
         link: "/product/elastic2"
       },
       {
         image: img("elastic3.png"),
-        description: "탄력 세럼",
-        alt: "탄력 세럼",
+        description: "브이티알 스트레칭 패치 4매",
+        alt: "브이티알 스트레칭 패치 4매",
         link: "/product/elastic3"
       },
       {
         image: img("elastic4.png"),
-        description: "리프팅 크림",
-        alt: "리프팅 크림",
+        description: "더마 모델링 팩 [콜라겐 탄력]",
+        alt: "더마 모델링 팩 [콜라겐 탄력]",
         link: "/product/elastic4"
       }
     ]
@@ -80,33 +80,33 @@ const productsData = [
     label: "모공 · 흔적",
     mainProduct: {
       image: img("pore_main.png"),
-      description: "모공 케어 팩 <br/>",
-      alt: "모공 케어 팩 대표 이미지",
+      description: "EGF Essence <br/> 메끈한 피부 케어",
+      alt: "EGF Essence 메끈한 피부 케어 대표 이미지",
       link: "/product/pore_more"
     },
     subProducts: [
       {
         image: img("pore1.png"),
-        description: "모공 케어 팩",
-        alt: "모공 케어 팩",
+        description: "더 티트리 포어 파우더 워시 50g",
+        alt: "더 티트리 포어 파우더 워시 50g",
         link: "/product/pore1"
       },
       {
         image: img("pore2.png"),
-        description: "티트리 모공 세럼",
-        alt: "티트리 모공 세럼",
+        description: "더마 시너지 랩핑 <br/> 마스크 [흔적토닝] 10매",
+        alt: "더마 시너지 랩핑 마스크 [흔적토닝] 10매",
         link: "/product/pore2"
       },
       {
         image: img("pore3.png"),
-        description: "모공 집중 앰플",
-        alt: "모공 집중 앰플",
+        description: "마데카소사이드 수분 <br/> 선세럼 흔적 리페어",
+        alt: "마데카소사이드 수분 선세럼 흔적 리페어",
         link: "/product/pore3"
       },
       {
         image: img("pore4.png"),
-        description: "모공 클린 마스크",
-        alt: "모공 클린 마스크",
+        description: "블랙헤드 멜팅 클리어 코팩 4매",
+        alt: "블랙헤드 멜팅 클리어 코팩 4매",
         link: "/product/pore4"
       }
     ]
@@ -116,34 +116,34 @@ const productsData = [
     id: "glow",
     label: "광채 · 영양",
     mainProduct: {
-      image: img("glow1.png"),
-      description: "비타민 광채 앰플",
-      alt: "비타민 광채 앰플 대표 이미지",
-      link: "/product/glow1"
+      image: img("glow_main.png"),
+      description: "Radiant Nutrition <br/> 피부 활력 케어",
+      alt: "Radiant Nutrition 피부 활력 케어 대표 이미지",
+      link: "/product/glow_more"
     },
     subProducts: [
       {
         image: img("glow1.png"),
-        description: "비타민 광채 앰플",
-        alt: "비타민 광채 앰플",
+        description: "더마 씰 마스크 영양 탄력 10매",
+        alt: "더마 씰 마스크 영양 탄력 10매",
         link: "/product/glow1"
       },
       {
         image: img("glow2.png"),
-        description: "광채 마스크",
-        alt: "광채 마스크",
+        description: "더마 시너지 랩핑 마스크 <br/> [잡티결광] 10매",
+        alt: "더마 시너지 랩핑 마스크 [잡티결광] 10매",
         link: "/product/glow2"
       },
       {
         image: img("glow3.png"),
-        description: "영양 세럼",
-        alt: "영양 세럼",
+        description: "더마플러스 동백 마스크 10매 [영양리프팅]",
+        alt: "더마플러스 동백 마스크 10매 [영양리프팅]",
         link: "/product/glow3"
       },
       {
         image: img("glow4.png"),
-        description: "비타민 크림",
-        alt: "비타민 크림",
+        description: "비타 콜라겐 아이 앰플 패치 60매",
+        alt: "비타 콜라겐 아이 앰플 패치 60매",
         link: "/product/glow4"
       }
     ]
