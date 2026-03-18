@@ -13,6 +13,16 @@ function App() {
   const [topBanner, setTopBanner]=useState('')
   const [isScrolled, setIsScrolled]=useState(false)
 
+  const [mNavOpen, setMNavOpen] = useState(false)
+
+  const handleMNavOpen = () => setMNavOpen(true)
+  const handleMNavClose = () => setMNavOpen(false)
+
+  useEffect(()=>{
+
+    document.body.style.overflow=mNavOpen?'hidden':''
+
+  },[mNavOpen])
 
   useEffect(()=>{
 
@@ -36,7 +46,10 @@ function App() {
     <div className={`app-container ${topBanner} ${isScrolled? 'scrolled':''} `}>
       <FixedTopBtn/>
       <TopBanner  onClick={upTopBanner}/>
-      <Header />
+      <Header
+        mNavOpen={mNavOpen}
+        onNavOpen={handleMNavOpen}
+        onNavClose={handleMNavClose} />
       <main>
         <section id="hero" className='section'>
           <Hero />

@@ -6,6 +6,10 @@ header{
     height: 8rem;
     transition: all .3s;
 
+    @media screen and (max-width: 1024px) {
+        top: 4rem;
+    }
+
     .inner {
         max-width: 192rem;
         padding: 0 5rem;
@@ -13,6 +17,14 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .mob-nav-btn {
+            display: none;
+
+            @media screen and (max-width:1024px) {
+                display: block;
+            }
+        }
 
         .nav-list{
             display: flex;
@@ -37,6 +49,10 @@ header{
                 &:hover::after{
                     width: 100%;
                 }
+
+                @media screen and (max-width:1024px) {
+                    display: none;
+                }
             }
         }
         h1.tit {
@@ -44,6 +60,10 @@ header{
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
+
+            @media screen and (max-width:1024px) {
+                width: 12.4rem;
+            }
         }
 
         .util-list{
@@ -51,7 +71,7 @@ header{
             align-items: center;
             gap: 2.6rem;
             max-height: 2.5rem;
-            
+
             .icon-wrapper {
                 display: flex;
                 justify-content: center;
@@ -69,6 +89,12 @@ header{
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+            }
+
+            @media screen and (max-width:1024px) {
+                li:not(:last-child) {
+                    display: none;
                 }
             }
         }

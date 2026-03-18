@@ -7,6 +7,10 @@
         padding: 0;
         margin-top: 3rem;
         transition: margin-top .3s;
+
+        @media screen and (max-width: 1024px) {
+            margin-top: 4rem;
+        }
     }
 
     h2.tit {
@@ -33,6 +37,13 @@
         transition: all .8s;
         overflow: hidden;
         z-index: 1;
+
+        @media screen and (max-width:1024px) {
+            margin-top: 2rem;
+            font-size: 1.3rem;
+            width: 20.3rem;
+            height: 3.7rem;
+        }
 
         &::after {
             content: "";
@@ -90,7 +101,24 @@ footer {
 
     &.scrolled {
         header {
-            background: var(--bg);
+            background: var(--bg6);
         }
+    }
+}
+
+@keyframes up {
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-2rem);
+    }
+}
+
+.mob-only {
+    display: none;
+
+    @media screen and (max-width: 1024px) {
+        display: block;
     }
 }

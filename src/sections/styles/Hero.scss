@@ -1,6 +1,10 @@
 .hero-container {
     height: 76.9rem;
 
+    @media screen and (max-width:1024px) {
+        height: 48rem;
+    }
+
     .swiper {
         height: 100%;
     }
@@ -8,13 +12,14 @@
     .hero-slide {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        
+        background-position: right top;
+        transition: background-image 0.15s ease-in-out;
+
         .inner {
             display: flex;
             justify-content: flex-start;
-            max-width: 140rem;
-            
+            max-width: 72.488%;
+
             .t-wrap {
                 height: 32.5rem;
                 margin: 18.3rem 0 0;
@@ -27,7 +32,27 @@
                 p.txt {
                     margin-top: 3.7rem;
                     font-size: 2.1rem;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 300;
                     line-height: 21px;
+                }
+            }
+
+            @media screen and (max-width:1024px) {
+                max-width: 83.6%;
+                .t-wrap {
+                    height: 20.8rem;
+                    margin: 8.4rem 0 0;
+
+                    h2.tit {
+                        font-size: 4rem;
+                        line-height: 55px;
+                    }
+
+                    p.txt {
+                        margin-top: 2rem;
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -90,6 +115,11 @@
         display: flex;
         align-items: center;
         gap:3.6rem;
+
+        @media screen and (max-width:1024px) {
+            left: 8vw;
+            gap: 2rem;
+        }
         
         .arr-prev,
         .arr-next {
@@ -100,6 +130,11 @@
             background-repeat: no-repeat;
             background-size: contain;
             font-size: 0;
+
+            @media screen and (max-width:1024px) {
+                width: 4rem;
+                height: 1.36rem;
+            }
         }
         .arr-prev{
             background-image: url(/img/icon_main_ban_arrow_prev.svg);
@@ -116,18 +151,31 @@
             color: var(--text2);
             line-height: 30px;
             letter-spacing: 14px;
+
+            @media screen and (max-width:1024px) {
+                height: 5.5rem;
+            }
             
             .swiper-pagination-current{
                 font-size: 2.4rem;
                 position: absolute;
                 left: 0;
                 top: 8px;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 1.8rem;
+                }
             }
+
             .swiper-pagination-total{
                 font-size: 2.4rem;
                 position: absolute;
                 right: 0;
                 bottom: -8px;
+
+                @media screen and (max-width:1024px) {
+                    font-size: 1.8rem;
+                }
             }
 
             &::after{
@@ -140,6 +188,10 @@
                 left: 50%;
                 top: calc(50% + 8px);
                 transform: translate(-50%,-50%) rotate(45deg);
+
+                @media screen and (max-width:1024px) {
+                    height: 57.98px;
+                }
             }
         }
 
