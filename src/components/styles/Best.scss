@@ -5,6 +5,10 @@
     .best-inner {
         max-width: 140rem;
         padding: 0 0 10rem 0;
+
+        @media screen and (max-width:1024px) {
+            // padding: 0 0 10rem 0;
+        }
         
         h2.tit {
             text-align: center;
@@ -13,6 +17,10 @@
             text-transform: uppercase;
             
             margin-bottom: 4rem;
+
+            @media screen and (max-width:1024px) {
+                font-size: 4rem;
+            }
         }
 
         .img-wrap {

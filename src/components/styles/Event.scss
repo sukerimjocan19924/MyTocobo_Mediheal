@@ -3,16 +3,16 @@
     margin: 0;
 
     .event-inner {
-        padding: 10rem 0;
-        max-width: 140rem;
+        padding: 10rem 5rem;
+        max-width: 150rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         .img-wrap {
             width: 72rem;
-            height: 63rem;
-            
+            height: 51%;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -25,6 +25,11 @@
             padding: 0 5rem;
             margin-left: 9.9rem;
             margin-right: 7.2rem;
+
+            @media screen and (max-width:1530px) {
+                margin-left: 0;
+                margin-right: 0;
+            }
             
             p.txt-2 {
                 font-family: 'Source Serif Pro', serif;
@@ -62,6 +67,60 @@
                     font-weight: 500;
                 }
             }
+        }
+
+        @media screen and (max-width:1024px) {
+            padding: 5rem 3rem;
+            max-width: 96rem;
+
+            .img-wrap {
+                width: 59.22%;
+            }
+            
+            .t-wrap {
+                margin-left: 3rem;
+                margin-right: 0;
+                
+                padding: 0;
+                width: 50.9rem;
+
+                p.txt-2 {
+                    font-size: 1.9rem;
+                    line-height: 1.9rem;
+                }
+
+                h2.tit {
+                    font-size: 4rem;
+                    line-height: 5.5rem;
+                    margin: 2.6rem 0 2.8rem;
+                }
+
+                a.btn {
+                    &:hover {
+                        font-size: 1.49rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width:1024px) {
+            p.txt-2 {
+                    font-size: 1.9rem;
+                    line-height: 1.9rem;
+            }
+
+            h2.tit {
+                font-size: 1%;
+                line-height: 5.5rem;
+            }
+
+            // a.btn {
+            //     &:hover {
+            //         font-size: 1.49rem;
+            //         font-weight: 400;
+            //     }
+            // }
         }
     }
 }

@@ -13,6 +13,11 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+
+            @media screen and (max-width:1024px) {
+                height: 23.4rem;
+                transition: all 1.5;
+            }
     
             .txt-wrap {
                 width: 20.4rem;
@@ -40,7 +45,11 @@
                 .btn-wrap {  
                     border: .1rem solid var(--bg);
                     padding: 1.9rem 8rem;
-    
+                    
+                    @media screen and (max-width:1024px) {
+                        padding: 1rem 8rem;
+                    }
+
                     .more-btn {
                         font-size: 1.5rem;
                         font-weight: 600;
@@ -53,12 +62,17 @@
                         color: var(--primary);
                         border: 1px solid var(--primary);
                         background-color: var(--bg);
-    
-                            .more-btn {
-                                transform: scale(1.33);
-                                color: var(--primary);
+
+                        .more-btn {
+                            transform: scale(1.33);
+                            color: var(--primary);
+
+                            @media screen and (max-width:1024px) {
+                                transform: scale(1.15);
                             }
                         }
+
+                    }
                 }
     
             }
