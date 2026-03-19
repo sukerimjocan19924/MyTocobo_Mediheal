@@ -10,7 +10,8 @@
         align-items: center;
 
         .img-wrap {
-            width: 72rem;
+            // width: 72rem;
+            width: 63rem;
             height: 51%;
 
             img {
@@ -26,11 +27,6 @@
             margin-left: 9.9rem;
             margin-right: 7.2rem;
 
-            @media screen and (max-width:1530px) {
-                margin-left: 0;
-                margin-right: 0;
-            }
-            
             p.txt-2 {
                 font-family: 'Source Serif Pro', serif;
                 color: var(--text6);
@@ -69,6 +65,56 @@
             }
         }
 
+        @media screen and (max-width:1530px) {
+            .t-wrap {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width:1350px) {
+            .img-wrap {
+                width: 50%;
+            }
+
+            .t-wrap {
+                p.txt-2 {
+                    font-size: 1.8rem;
+                    line-height: 1.9rem;
+                }
+
+                h2.tit {
+                    font-size: 5rem;
+                    line-height: 5.5rem;
+                }
+
+                p.txt-1 {
+                    font-size: 1.8rem;
+                    line-height: normal;
+                }
+            }
+        }
+
+        @media screen and (max-width:1230px) {
+            .t-wrap {
+                p.txt-2 {
+                    font-size: 2rem;
+                    line-height: 2rem;
+                }
+
+                h2.tit {
+                    font-size: 4.2rem;
+                    line-height: 4.5rem;
+                    margin: 2.3rem 0 2.2rem;
+                }
+
+                p.txt-1 {
+                    font-size: 1.6rem;
+                    line-height: normal;
+                }
+            }
+        }
+
         @media screen and (max-width:1024px) {
             padding: 5rem 3rem;
             max-width: 96rem;
@@ -91,7 +137,7 @@
 
                 h2.tit {
                     font-size: 4rem;
-                    line-height: 5.5rem;
+                    line-height: 4.5rem;
                     margin: 2.6rem 0 2.8rem;
                 }
 
@@ -102,25 +148,6 @@
                     }
                 }
             }
-        }
-
-        @media screen and (max-width:1024px) {
-            p.txt-2 {
-                    font-size: 1.9rem;
-                    line-height: 1.9rem;
-            }
-
-            h2.tit {
-                font-size: 1%;
-                line-height: 5.5rem;
-            }
-
-            // a.btn {
-            //     &:hover {
-            //         font-size: 1.49rem;
-            //         font-weight: 400;
-            //     }
-            // }
         }
     }
 }
