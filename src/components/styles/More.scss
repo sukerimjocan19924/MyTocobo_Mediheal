@@ -1,0 +1,82 @@
+#beyond {
+    padding: 0;
+    margin: 0;
+    
+    .more-inner {
+        padding: 5rem 0;
+        max-width: 100%;
+        .more-bg{
+            height: 36.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            @media screen and (max-width:1024px) {
+                height: 23.4rem;
+                transition: all 1.5;
+            }
+    
+            .txt-wrap {
+                width: 20.4rem;
+                color: var(--text);
+                text-align: center;
+                
+                .text-wrap {
+                    margin-bottom: 4rem;
+                  
+                    .title {
+                        font-size: 4rem;
+                        font-weight: 600;
+                        line-height: 4rem;
+                        margin-bottom: 2rem;
+                    }
+                    
+                    .subtitle {
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        line-height: 1.6rem;
+                        line-height: 14.4px;
+                    }
+                }
+                
+                .btn-wrap {  
+                    border: .1rem solid var(--bg);
+                    padding: 1.9rem 8rem;
+                    
+                    @media screen and (max-width:1024px) {
+                        padding: 1rem 8rem;
+                    }
+
+                    .more-btn {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        display: inline-block;
+                        transition: transform .3s ease, color .3s ease;
+                        transform-origin: center;
+                    }
+                    
+                    &:hover {
+                        color: var(--primary);
+                        border: 1px solid var(--primary);
+                        background-color: var(--bg);
+
+                        .more-btn {
+                            transform: scale(1.33);
+                            color: var(--primary);
+
+                            @media screen and (max-width:1024px) {
+                                transform: scale(1.15);
+                            }
+                        }
+
+                    }
+                }
+    
+            }
+    
+        }
+    }
+}
