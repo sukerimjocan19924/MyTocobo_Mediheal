@@ -1,8 +1,8 @@
 .hero-container {
-    height: 76.9rem;
+    height: clamp(48rem, 50vw, 76.9rem);
 
-    @media screen and (max-width:1024px) {
-        height: 48rem;
+    @media screen and (max-width:1111px) {
+        height: clamp(74.9rem, 60vw, 48rem);
     }
 
     .swiper {
@@ -12,7 +12,7 @@
     .hero-slide {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: right;
         transition: background-image 0.15s ease-in-out;
 
         .inner {
@@ -42,7 +42,7 @@
                 max-width: 83.6%;
                 .t-wrap {
                     height: 20.8rem;
-                    margin: 8.4rem 0 0;
+                    margin: 35rem 0 0;
 
                     h2.tit {
                         font-size: 4rem;

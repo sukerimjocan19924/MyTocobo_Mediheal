@@ -9,10 +9,19 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width:750px) {
+            flex-direction: column;
+            gap: 6rem;
+            padding-top: 6rem;
+        }
+
         .img-wrap {
-            // width: 72rem;
             width: 63rem;
             height: 51%;
+
+            @media screen and (max-width:1024px) {
+                height: 100%;
+            }
 
             img {
                 width: 100%;
@@ -30,7 +39,7 @@
             p.txt-2 {
                 font-family: 'Source Serif Pro', serif;
                 color: var(--text6);
-                font-size: 1.9rem;
+                font-size: clamp(1.8rem, 1.8vw, 1.9rem);
                 font-weight: 400;
                 line-height: 2.6rem;
                 letter-spacing: 0.02em;
@@ -38,9 +47,9 @@
 
             h2.tit {
                 color: var(--primary);
-                font-family: 'Circular Std', sans-serif; /* 폰트 */
+                font-family: 'Circular Std', sans-serif;
                 font-weight: 400;
-                font-size: 5.89rem;
+                font-size: clamp(4rem, 4vw, 5.89rem);
                 line-height: 66px;
                 letter-spacing: 0;
                 margin: 2.6rem 0 2rem;
@@ -49,6 +58,7 @@
             p.txt-1 {
                 color: var(--text7);
                 font-size: 1.8rem;
+                font-size: clamp(1.6rem, 1.6vw, 1.8rem);
                 font-weight: 500;
                 line-height: 2.8rem;
                 letter-spacing: 0.02em;
@@ -79,7 +89,6 @@
 
             .t-wrap {
                 p.txt-2 {
-                    font-size: 1.8rem;
                     line-height: 1.9rem;
                 }
 
@@ -89,7 +98,7 @@
                 }
 
                 p.txt-1 {
-                    font-size: 1.8rem;
+                    // font-size: 1.8rem;
                     line-height: normal;
                 }
             }
@@ -109,7 +118,7 @@
                 }
 
                 p.txt-1 {
-                    font-size: 1.6rem;
+                    // font-size: 1.6rem;
                     line-height: normal;
                 }
             }
@@ -128,15 +137,13 @@
                 margin-right: 0;
                 
                 padding: 0;
-                width: 50.9rem;
+                width: 80%;
 
                 p.txt-2 {
-                    font-size: 1.9rem;
                     line-height: 1.9rem;
                 }
 
                 h2.tit {
-                    font-size: 4rem;
                     line-height: 4.5rem;
                     margin: 2.6rem 0 2.8rem;
                 }

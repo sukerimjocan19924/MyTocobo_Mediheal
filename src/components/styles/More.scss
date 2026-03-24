@@ -13,11 +13,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-
-            @media screen and (max-width:1024px) {
-                height: 23.4rem;
-                transition: all 1.5;
-            }
     
             .txt-wrap {
                 width: 20.4rem;
