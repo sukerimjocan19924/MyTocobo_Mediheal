@@ -98,9 +98,16 @@ const Footer = () => {
         </div>
         
         <div className="right">
-          <div className='cus-wrap'>
+          <div 
+          onClick={()=>{
+            if (window.innerWidth >= 1111) return
+            setIsOpen(prevStatus=>!prevStatus)}}
+          className={`cus-wrap ${isOpen ? "open" : ""}`}>
             <h4>
               {customerCenterData.title}
+              <span className="mob-only m-plus">
+
+              </span>
             </h4>
             <div className="hidden" ref={hiddenContentRef}>
               <p className="cs-box">
@@ -116,6 +123,19 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
+          <div className="footer-legal mob-only">
+
+            <div className="legal-links">
+              {footerLegal.links.map((item, i) => (
+                <a href={item.href} key={i}>
+                  {item.label}
+                </a>
+              ))}
+            </div>
+            <p>{footerLegal.copyright}</p>
+          </div>
+
           <ul className="sns-links">
             {socialLinks.map((sns) => (
               <li key={sns.id}>
@@ -125,7 +145,7 @@ const Footer = () => {
                   title={sns.label}
                   aria-label={sns.label}>
                   {React.createElement(sns.icon, {
-                    size: 22, "aria-hidden": true
+                    size: 30, "aria-hidden": true
                   })}
                 </a>
               </li>

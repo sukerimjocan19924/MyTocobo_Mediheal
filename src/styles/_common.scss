@@ -118,7 +118,15 @@ footer {
 .mob-only {
     display: none;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1111px) {
         display: block;
+
+        .legal-links a {
+            margin-right: 2rem;
+        }
+
+        p {
+            margin-top: 1rem;
+        }
     }
 }

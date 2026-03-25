@@ -55,6 +55,24 @@
                     }
                 }
             }
+
+            @media screen and (max-width:550px) {
+                .t-wrap {
+                    height: 20.8rem;
+                    margin: 46rem 0 0;
+
+                    h2.tit {
+                        font-size: 3rem;
+                        font-weight: 500;
+                        line-height: 40px;
+                    }
+
+                    p.txt {
+                        margin-top: 1.3rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
 
         &.hs-1, &.hs-2, &.hs-3, &.hs-4 {
@@ -64,6 +82,12 @@
 
             p.txt {
                 color: var(--main-sliders-sub)
+            }
+
+            @media screen and (max-width:550px) {
+                a.btn {
+                    display: none;
+                }
             }
         }
 
