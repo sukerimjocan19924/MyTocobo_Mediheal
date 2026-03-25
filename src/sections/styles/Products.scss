@@ -2,7 +2,7 @@
     max-width: 140rem;
     margin: 0 auto 11.1rem;
 
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width:1440px) {
         padding: 0 2rem
     }
 
@@ -31,6 +31,7 @@
         margin-bottom: 1rem;
 
         @media screen and (max-width:600px) {
+        @media screen and (max-width:999px) {
             grid-template-columns: repeat(2, 2fr);
 
         }
@@ -66,6 +67,7 @@
         grid-template-columns: 1fr 1fr;
         gap: .8rem;
             @media screen and (max-width:600px) {
+            @media screen and (max-width:999px) {
                 display: flex;
                 flex-wrap: wrap;
             }
@@ -118,6 +120,13 @@
                     }
                     @media screen and (max-width:600px) {
                         font-size: clamp(1rem, 6vw, 3rem);
+                    }
+                    @media screen and (max-width:1440px) {
+                        font-size: 2rem;
+                    }
+
+                    @media screen and (max-width:999px) {
+                        margin-bottom: 2rem;
                     }
                 }
 
