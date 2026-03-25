@@ -17,6 +17,10 @@
         height: 3.2rem;
         line-height: 3.2rem;
         letter-spacing: -0.075rem;
+
+        @media screen and (max-width:1024px) {
+            font-size: 4rem;
+        }
     }
 
     // tab 메뉴
@@ -26,6 +30,7 @@
         gap: 1rem;
         margin-bottom: 1rem;
 
+        @media screen and (max-width:600px) {
         @media screen and (max-width:999px) {
             grid-template-columns: repeat(2, 2fr);
 
@@ -61,6 +66,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: .8rem;
+            @media screen and (max-width:600px) {
             @media screen and (max-width:999px) {
                 display: flex;
                 flex-wrap: wrap;
@@ -75,6 +81,7 @@
 
             @media screen and (max-width:1440px) {
                 min-height: 50rem;
+                width: 100%;
             }
 
             @media screen and (max-width:999px) {
@@ -102,11 +109,18 @@
                     margin: 0 0 3.5rem;
                     font-family: 'Circular Std', sans-serif;
                     font-size: 4rem;
+                    font-size: clamp(2rem, 3vw, 4rem);
                     font-weight: 400;
                     line-height: 1.275;
                     letter-spacing: 0;
                     color: var(--text8);
 
+                    @media screen and (max-width:999px) {
+                        margin-bottom: 2rem;
+                    }
+                    @media screen and (max-width:600px) {
+                        font-size: clamp(1rem, 6vw, 3rem);
+                    }
                     @media screen and (max-width:1440px) {
                         font-size: 2rem;
                     }
@@ -188,14 +202,19 @@
                     transition: opacity 0.3s ease;
 
                     p {
-                        font-size: 2.4rem;
+                        font-size: clamp(1.5rem, 1.5vw, 2.4rem);
                         font-weight: 600;
-                        line-height: 3.4rem;
+                        line-height: clamp(2rem, 1.5vw, 3.4rem);
                         word-break: keep-all;
+
+                        @media screen and (max-width:600px) {
+                            font-size: clamp(1.4rem, 80%, 2.4rem);
+                            line-height: clamp(2rem, 1.5vw, 3.4rem);
+                        }
                     }
 
                     span {
-                        font-size: 2rem;
+                        font-size: clamp(1.5rem, 1.5vw, 2rem);
                         line-height: 2.4rem;
                     }
                 }

@@ -17,7 +17,7 @@ const Hero = () => {
   }, []);
 
   const getImageByDevice = (image) => {
-    if (windowWidth <= 600) return image.mobile;
+    if (windowWidth <= 650) return image.mobile;
     if (windowWidth <= 1024) return image.tablet;
     return image.desktop;
   };
