@@ -67,7 +67,7 @@
             @media screen and (max-width:650px) {
                 .t-wrap {
                     height: 20.8rem;
-                    margin: 58rem 0 0;
+                    margin: 61rem 0 0;
 
                     h2.tit {
                         font-weight: 500;
@@ -142,8 +142,9 @@
         align-items: center;
         gap:3.6rem;
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1200px) {
             left: 8vw;
+            bottom: 6rem;
             gap: 2rem;
         }
         
@@ -157,7 +158,7 @@
             background-size: contain;
             font-size: 0;
 
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1200px) {
                 width: 4rem;
                 height: 1.36rem;
             }
@@ -178,7 +179,7 @@
             line-height: 30px;
             letter-spacing: 14px;
 
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:1200px) {
                 height: 5.5rem;
             }
             
@@ -188,7 +189,7 @@
                 left: 0;
                 top: 8px;
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                     font-size: 1.8rem;
                 }
             }
@@ -199,7 +200,7 @@
                 right: 0;
                 bottom: -8px;
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                     font-size: 1.8rem;
                 }
             }
@@ -215,7 +216,7 @@
                 top: calc(50% + 8px);
                 transform: translate(-50%,-50%) rotate(45deg);
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                     height: 57.98px;
                 }
             }
