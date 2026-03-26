@@ -42,7 +42,7 @@
                     font-size: clamp(1.6rem, 1.8vw, 2.1rem);
                     font-family: 'Noto Sans KR', sans-serif;
                     font-weight: 300;
-                    line-height: clamp(1.6rem, 1.8vw, 2.1rem);
+                    line-height: clamp(2rem, 2.5vw, 3rem);
                 }
             }
 
@@ -67,7 +67,7 @@
             @media screen and (max-width:650px) {
                 .t-wrap {
                     height: 20.8rem;
-                    margin: 55rem 0 0;
+                    margin: 58rem 0 0;
 
                     h2.tit {
                         font-weight: 500;
