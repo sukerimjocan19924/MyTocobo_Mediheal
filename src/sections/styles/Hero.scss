@@ -1,5 +1,5 @@
 .hero-container {
-    height: clamp(48rem, 50vw, 76.9rem);
+    height: 76.9rem;
 
     @media screen and (max-width:1111px) {
         height: clamp(74.9rem, 60vw, 48rem);
