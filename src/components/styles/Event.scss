@@ -17,11 +17,6 @@
 
         .img-wrap {
             width: 63rem;
-            height: 51%;
-
-            @media screen and (max-width:1024px) {
-                height: 100%;
-            }
 
             img {
                 width: 100%;
@@ -39,7 +34,7 @@
             p.txt-2 {
                 font-family: 'Source Serif Pro', serif;
                 color: var(--text6);
-                font-size: clamp(1.8rem, 1.8vw, 1.9rem);
+                font-size: clamp(1.5rem, 1.65vw, 1.9rem);
                 font-weight: 400;
                 line-height: 2.6rem;
                 letter-spacing: 0.02em;
@@ -58,7 +53,7 @@
             p.txt-1 {
                 color: var(--text7);
                 font-size: 1.8rem;
-                font-size: clamp(1.6rem, 1.6vw, 1.8rem);
+                font-size: clamp(1.4rem, 1.6vw, 1.8rem);
                 font-weight: 500;
                 line-height: 2.8rem;
                 letter-spacing: 0.02em;
@@ -73,67 +68,55 @@
                     font-weight: 500;
                 }
             }
-        }
 
-        @media screen and (max-width:1530px) {
-            .t-wrap {
+            @media screen and (max-width:1530px) {
                 margin-left: 0;
                 margin-right: 0;
             }
-        }
-
-        @media screen and (max-width:1350px) {
-            .img-wrap {
-                width: 50%;
-            }
-
-            .t-wrap {
+    
+            @media screen and (max-width:1350px) {
                 p.txt-2 {
                     line-height: 1.9rem;
                 }
 
                 h2.tit {
-                    font-size: 5rem;
-                    line-height: 5.5rem;
+                    font-size: clamp(4.2rem, 4.6vw, 5rem);
+                    line-height: clamp(4.5rem, 4vw, 5.5rem);
                 }
 
                 p.txt-1 {
-                    // font-size: 1.8rem;
                     line-height: normal;
                 }
             }
-        }
 
-        @media screen and (max-width:1230px) {
-            .t-wrap {
+            @media screen and (max-width:1230px) {
                 p.txt-2 {
                     font-size: 2rem;
                     line-height: 2rem;
                 }
 
                 h2.tit {
-                    font-size: 4.2rem;
-                    line-height: 4.5rem;
                     margin: 2.3rem 0 2.2rem;
                 }
 
                 p.txt-1 {
-                    // font-size: 1.6rem;
                     line-height: normal;
                 }
             }
         }
+
+
 
         @media screen and (max-width:1024px) {
             padding: 5rem 3rem;
             max-width: 96rem;
 
             .img-wrap {
-                width: 59.22%;
+                width: clamp(40rem, 50vw, 55rem);
             }
             
             .t-wrap {
-                margin-left: 3rem;
+                margin-left: 5rem;
                 margin-right: 0;
                 
                 padding: 0;
@@ -153,6 +136,35 @@
                         font-size: 1.49rem;
                         font-weight: 400;
                     }
+                }
+            }
+        }
+
+        @media screen and (max-width:750px) {
+            .t-wrap {
+                margin: 0;
+                width: 40rem;
+            }
+        }
+
+        @media screen and (max-width:400px) {
+            .img-wrap {
+                width: clamp(30rem, 35vw, 40rem);
+            }
+
+            .t-wrap {
+                width: clamp(30rem, 35vw, 40rem);
+
+                p.txt-2 {
+                    font-size: 1.8rem;
+                }
+
+                h2.tit {
+                    line-height: 5rem;
+                }
+                
+                p.txt-1 {
+                    font-size: 1.6rem;
                 }
             }
         }

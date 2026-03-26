@@ -50,6 +50,11 @@
             text-transform: capitalize;
             color:var(--primary);
             margin-bottom: 2.5rem;
+
+            @media screen and (max-width:360px) {
+                font-size: 3.3rem;
+                margin-bottom: 1.5rem;
+            }
         }
     }
 
@@ -59,7 +64,11 @@
         li{
             font-size: 1.6rem;
             margin-top: 2rem;
-            color:var(--4)
+            color:var(--4);
+
+            @media screen and (max-width:360px) {
+                font-size: 1.4rem;
+            }
         }
     }
 }
