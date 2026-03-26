@@ -11,17 +11,13 @@
     h2.tit {
         text-align: center;
         color: var(--text4);
-        font-size: 4.2rem;
+        font-size: clamp(4rem, 4.1vw, 4.2rem);
         font-weight: 600;
         text-transform: uppercase;
         margin-bottom: 5rem;
         height: 3.2rem;
         line-height: 3.2rem;
         letter-spacing: -0.075rem;
-
-        @media screen and (max-width:1024px) {
-            font-size: 4rem;
-        }
     }
 
     // tab 메뉴

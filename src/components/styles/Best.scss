@@ -18,7 +18,8 @@
             max-width: 88rem;
 
             h2.tit {
-                font-size: 4rem;
+                font-size: clamp(4rem, 4.1vw, 4.2rem);
+                font-weight: 600;
             }
 
             .info-tit {
@@ -45,7 +46,6 @@
         h2.tit {
             text-align: center;
             color: var(--bg3);
-            font-size: 4.2rem;
             text-transform: uppercase;
             margin-bottom: 4rem;
         }
